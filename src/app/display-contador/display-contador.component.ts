@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-display-contador',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./display-contador.component.scss']
 })
 export class DisplayContadorComponent implements OnInit {
+
+  @Input()
+  counter: number = 0;
 
   constructor() { }
 
